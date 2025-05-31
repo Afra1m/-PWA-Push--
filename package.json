@@ -1,0 +1,16 @@
+{
+  "name": "smart-todo-pwa",
+  "version": "1.0.0",
+  "description": "PWA приложение для управления задачами с push-уведомлениями",
+  "main": "server/main.go",
+  "scripts": {
+    "start": "go run server/main.go",
+    "dev": "nodemon --watch server --ext go --exec go run server/main.go"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+} 

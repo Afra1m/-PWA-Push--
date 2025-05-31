@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный список задач</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="theme-color" content="#2196f3">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Умный список задач</h1>
+            <button id="enableNotifications" class="btn">Включить уведомления</button>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="active">Активные</button>
+            <button class="filter-btn" data-filter="completed">Выполненные</button>
+        </div>
+
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Добавить новую задачу..." required>
+            <button type="submit" class="btn">Добавить</button>
+        </form>
+
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/service-worker.js"></script>
+</body>
+</html> 
